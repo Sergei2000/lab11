@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtryd.a  CMakeFiles/try.dir/main.cpp.o
+/usr/bin/ranlib libtryd.a

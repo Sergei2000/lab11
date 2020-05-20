@@ -37,6 +37,30 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
 endif()
 
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}/home/sergei/Desktop/lab11/_install/lab11" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/sergei/Desktop/lab11/_install/lab11")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}/home/sergei/Desktop/lab11/_install/lab11"
+         RPATH "")
+  endif()
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "/home/sergei/Desktop/lab11/_install/lab11")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+file(INSTALL DESTINATION "/home/sergei/Desktop/lab11/_install" TYPE EXECUTABLE FILES "/home/sergei/Desktop/lab11/cmake-build-debug/lab11")
+  if(EXISTS "$ENV{DESTDIR}/home/sergei/Desktop/lab11/_install/lab11" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/sergei/Desktop/lab11/_install/lab11")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/sergei/Desktop/lab11/_install/lab11")
+    endif()
+  endif()
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

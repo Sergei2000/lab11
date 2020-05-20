@@ -79,6 +79,12 @@ lab11_EXTERNAL_OBJECTS =
 
 lab11: CMakeFiles/lab11.dir/main.cpp.o
 lab11: CMakeFiles/lab11.dir/build.make
+lab11: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_log-mt-d-x64.a
+lab11: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_thread-mt-d-x64.a
+lab11: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_program_options-mt-d-x64.a
+lab11: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_log_setup-mt-d-x64.a
+lab11: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libboost_filesystem-mt-d-x64.a
+lab11: /home/sergei/.hunter/_Base/9a3594a/744cf2f/48401e9/Install/lib/libasync++d.a
 lab11: CMakeFiles/lab11.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sergei/Desktop/lab11/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable lab11"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab11.dir/link.txt --verbose=$(VERBOSE)

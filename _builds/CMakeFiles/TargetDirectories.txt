@@ -1,0 +1,9 @@
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/list_install_components.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/install.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/rebuild_cache.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/package.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/lab11.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/install/strip.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/install/local.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/package_source.dir
+/home/sergei/Desktop/lab11/_builds/CMakeFiles/edit_cache.dir
